@@ -316,8 +316,27 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
+        }
+
+        @media (min-width: 1200px) {
+            .gallery-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .gallery-item {
@@ -739,7 +758,7 @@
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="#" alt="House Exterior Cleaning Before/After" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="Squeaky-Kleen-exterior-before-after.png" alt="House Exterior Cleaning Before/After" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="gallery-content">
                         <div class="gallery-badge">🏠 House Cleaning</div>
@@ -750,7 +769,7 @@
 
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="#" alt="Paver Sealing Before/After" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="Squeaky-Kleen-walkway-before-after.png" alt="Paver Sealing Before/After" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="gallery-content">
                         <div class="gallery-badge">🏆 Paver Sealing</div>
@@ -761,12 +780,23 @@
 
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="#" alt="Dramatic Cleaning Results" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="Squeaky-Kleen-driveway-before-after.png" alt="Dramatic Cleaning Results" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="gallery-content">
                         <div class="gallery-badge">⚡ Dramatic Results</div>
                         <h3 class="gallery-title">Side-by-Side Proof</h3>
                         <p class="gallery-description">See the incredible transformation possible with professional pressure washing services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="Squeaky-Kleen-roof-before-after.png" alt="Roof Cleaning Before/After" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="gallery-content">
+                        <div class="gallery-badge">💎 Roof Washing</div>
+                        <h3 class="gallery-title">Roof Transformation</h3>
+                        <p class="gallery-description">Safe, low-pressure roof cleaning that removes algae and extends your roof's lifespan.</p>
                     </div>
                 </div>
             </div>
