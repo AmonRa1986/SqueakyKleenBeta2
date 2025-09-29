@@ -3,33 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squeaky Kleen Pressure Washing | Professional Services | Call 772-418-4081</title>
-    <meta name="description" content="Transform your property with Squeaky Kleen's professional pressure washing services. Specializing in paver sealing, roof washing, and complete property restoration. Free estimates available!">
+    <title>Squeaky Kleen Pressure Washing Services | Free Estimates | 772-207-0528</title>
+    <meta name="description" content="Professional pressure washing services for residential and commercial properties. Specializing in paver sealing, roof washing, driveway cleaning, and house washing. Call 772-207-0528 for your free estimate today!">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
     <style>
-        /* Alternative Design - Modern Gradient Approach */
+        /* Squeaky Kleen Brand Colors - Matching Logo */
         :root {
-            /* Squeaky Kleen Brand Colors - Enhanced */
-            --primary-navy: #0f172a;
-            --primary-red: #dc2626;
-            --primary-teal: #0d9488;
-            --accent-blue: #1e40af;
-            --accent-orange: #ea580c;
-            
-            /* Gradients */
-            --hero-gradient: linear-gradient(135deg, #0f172a 0%, #1e40af 50%, #0d9488 100%);
-            --card-gradient: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-            --button-gradient: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
-            
-            /* Shadows */
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-            --shadow-md: 0 8px 25px rgba(0,0,0,0.15);
-            --shadow-lg: 0 20px 40px rgba(0,0,0,0.2);
-            
-            /* Typography */
-            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-display: 'Poppins', sans-serif;
+            --logo-blue: #0ea5e9;
+            --logo-red: #dc2626;
+            --logo-white: #ffffff;
+            --navy-dark: #1e293b;
+            --gray-light: #f8fafc;
+            --gray-medium: #64748b;
+            --success-green: #10b981;
+            --warning-orange: #f59e0b;
         }
 
         * {
@@ -39,481 +27,415 @@
         }
 
         body {
-            font-family: var(--font-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #1f2937;
-            overflow-x: hidden;
+            color: var(--navy-dark);
         }
 
-        /* Header - Floating Design */
+        /* Header with White Background for Logo */
         .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             padding: 1rem 0;
-            transition: all 0.3s ease;
-        }
-
-        .header.scrolled {
-            background: rgba(15, 23, 42, 0.98);
-            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .header-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .logo-brand {
+        .logo-section {
             display: flex;
             align-items: center;
             gap: 1rem;
         }
 
-        .logo-text {
-            font-family: var(--font-display);
-            font-size: 1.75rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #94a3b8 0%, #dc2626 50%, #0d9488 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .logo-image {
+            height: 60px;
+            width: 60px;
+            object-fit: contain;
+            border-radius: 50%;
         }
 
         .header-badge {
-            background: var(--primary-teal);
+            background: var(--logo-blue);
             color: white;
             padding: 0.5rem 1rem;
-            border-radius: 2rem;
+            border-radius: 25px;
             font-size: 0.875rem;
             font-weight: 600;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
         }
 
         .header-contact {
             display: flex;
             align-items: center;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         .phone-link {
-            color: white;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--navy-dark);
             text-decoration: none;
             font-size: 1.25rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: color 0.3s ease;
+            font-weight: 700;
         }
 
-        .phone-link:hover {
-            color: var(--primary-teal);
+        .phone-link i {
+            color: var(--logo-blue);
         }
 
-        .cta-button {
-            background: var(--button-gradient);
+        .call-button {
+            background: #dc2626;
             color: white;
-            border: none;
-            padding: 0.875rem 2rem;
-            border-radius: 2rem;
-            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
             text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
+            font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: var(--shadow-sm);
         }
 
-        .cta-button:hover {
+        .call-button:hover {
+            background: #b91c1c;
             transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
         }
 
-        /* Hero Section - Full Screen Impact */
+        /* Hero Section */
         .hero {
-            min-height: 100vh;
-            background: var(--hero-gradient);
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            padding-bottom: 2rem;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-            opacity: 0.3;
+            background: linear-gradient(135deg, var(--logo-blue) 0%, #0284c7  100%);
+            color: white;
+            padding: 4rem 0;
         }
 
         .hero-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
             align-items: center;
-            position: relative;
-            z-index: 2;
         }
 
-        .hero-content {
-            color: white;
-        }
-
-        .hero-badge {
-            background: rgba(13, 148, 136, 0.2);
-            border: 1px solid var(--primary-teal);
-            color: var(--primary-teal);
-            padding: 0.75rem 1.5rem;
-            border-radius: 2rem;
-            font-size: 0.875rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 2rem;
-            backdrop-filter: blur(10px);
-        }
-
-        .hero-title {
-            font-family: var(--font-display);
-            font-size: 3.5rem;
+        .hero-content h1 {
+            font-size: 3rem;
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
         .hero-subtitle {
             font-size: 1.25rem;
-            color: #cbd5e1;
             margin-bottom: 2rem;
-            line-height: 1.6;
+            opacity: 0.9;
         }
 
-        .hero-features {
+        .features-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
             margin-bottom: 2rem;
         }
 
-        .hero-feature {
+        .feature {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            color: #e2e8f0;
+            gap: 0.5rem;
         }
 
-        .hero-feature i {
-            color: var(--primary-teal);
+        .feature i {
+            color: var(--success-green);
             font-size: 1.25rem;
         }
 
-        .hero-stats {
+        .stats {
             display: flex;
             gap: 2rem;
-            margin-bottom: 2rem;
+            margin-top: 2rem;
         }
 
-        .stat-item {
+        .stat {
             text-align: center;
         }
 
         .stat-number {
             font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary-teal);
-            display: block;
+            font-weight: 800;
+            color: var(--warning-orange);
         }
 
         .stat-label {
             font-size: 0.875rem;
-            color: #94a3b8;
+            opacity: 0.8;
         }
 
-        /* Form Card - Floating Design */
-        .form-wrapper {
-            position: relative;
-            z-index: 10;
-        }
-
+        /* Form Card */
         .form-card {
-            background: var(--card-gradient);
-            border-radius: 2rem;
-            box-shadow: var(--shadow-lg);
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(20px);
         }
 
         .form-header {
-            background: var(--button-gradient);
+            background: #dc2626;
             color: white;
-            padding: 2.5rem 2rem 2rem;
+            padding: 2rem;
             text-align: center;
-            position: relative;
         }
 
-        .form-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
-            opacity: 0.5;
-        }
-
-        .form-title {
-            font-family: var(--font-display);
-            font-size: 1.75rem;
+        .form-header h2 {
+            font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
-            position: relative;
-        }
-
-        .form-subtitle {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 0.875rem;
-            position: relative;
         }
 
         .form-body {
-            padding: 2.5rem 2rem;
-        }
-
-        .form-grid {
-            display: grid;
-            gap: 1.5rem;
+            padding: 2rem;
         }
 
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
+            margin-bottom: 1rem;
         }
 
         .form-group {
-            position: relative;
+            margin-bottom: 1rem;
         }
 
-        .form-label {
+        .form-group label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #374151;
             font-weight: 600;
-            font-size: 0.875rem;
+            color: var(--navy-dark);
         }
 
-        .form-input {
+        .form-group input,
+        .form-group select {
             width: 100%;
-            padding: 1rem;
-            border: 2px solid #e5e7eb;
-            border-radius: 1rem;
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
             font-size: 1rem;
-            transition: all 0.3s ease;
-            background: white;
+            transition: border-color 0.3s ease;
         }
 
-        .form-input:focus {
+        .form-group input:focus,
+        .form-group select:focus {
             outline: none;
-            border-color: var(--primary-teal);
-            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1);
-            transform: translateY(-1px);
-        }
-
-        .form-select {
-            width: 100%;
-            padding: 1rem;
-            border: 2px solid #e5e7eb;
-            border-radius: 1rem;
-            font-size: 1rem;
-            background: white;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .form-select:focus {
-            outline: none;
-            border-color: var(--primary-teal);
-            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1);
+            border-color: var(--logo-blue);
         }
 
         .property-buttons {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 0.75rem;
+            margin-bottom: 1rem;
         }
 
         .property-btn {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1.25rem 0.75rem;
-            border: 2px solid #e5e7eb;
-            border-radius: 1rem;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
             background: white;
             cursor: pointer;
-            transition: all 0.3s ease;
             text-align: center;
+            transition: all 0.3s ease;
         }
 
         .property-btn:hover {
-            border-color: var(--primary-teal);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-sm);
+            border-color: var(--logo-blue);
         }
 
         .property-btn.selected {
-            border-color: var(--primary-teal);
-            background: rgba(13, 148, 136, 0.05);
-            transform: translateY(-2px);
+            border-color: var(--logo-blue);
+            background: #eff6ff;
         }
 
         .property-btn i {
+            display: block;
             font-size: 1.5rem;
-            color: var(--primary-teal);
+            color: var(--logo-blue);
+            margin-bottom: 0.5rem;
         }
 
-        .property-btn span {
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: #374151;
-        }
-
-        .submit-button {
+        .submit-btn {
             width: 100%;
-            background: var(--button-gradient);
+            background: #dc2626;
             color: white;
             border: none;
-            padding: 1.25rem;
-            border-radius: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
             font-size: 1.125rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: var(--shadow-sm);
-            margin-top: 1rem;
         }
 
-        .submit-button:hover {
+        .submit-btn:hover {
+            background: #b91c1c;
             transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
         }
 
-        /* Services Section - Card Grid */
+        /* Gallery Section */
+        .gallery {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--navy-dark);
+            margin-bottom: 1rem;
+        }
+
+        .gallery-subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            color: var(--gray-medium);
+            margin-bottom: 3rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            background: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-medium);
+            font-size: 1.125rem;
+        }
+
+        .gallery-content {
+            padding: 1.5rem;
+        }
+
+        .gallery-badge {
+            background: var(--logo-red);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-description {
+            color: var(--gray-medium);
+        }
+
+        /* Services Section */
         .services {
-            padding: 6rem 0;
-            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+            padding: 4rem 0;
+            background: white;
         }
 
         .services-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1rem;
         }
 
-        .services-header {
+        .services h2 {
             text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .services-title {
-            font-family: var(--font-display);
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary-navy);
-            margin-bottom: 1rem;
-        }
-
-        .services-subtitle {
-            font-size: 1.25rem;
-            color: #6b7280;
-            max-width: 600px;
-            margin: 0 auto;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--navy-dark);
+            margin-bottom: 3rem;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
 
         .service-card {
             background: white;
-            border-radius: 1.5rem;
-            padding: 2.5rem;
+            border: 2px solid #f1f5f9;
+            border-radius: 16px;
+            padding: 2rem;
             text-align: center;
-            box-shadow: var(--shadow-sm);
             transition: all 0.3s ease;
             position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--primary-teal);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
         }
 
         .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
+            border-color: var(--logo-blue);
+            transform: translateY(-5px);
         }
 
-        .service-card:hover::before {
-            transform: scaleX(1);
+        .service-card.featured {
+            border-color: var(--logo-red);
+            background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
         }
 
-        .service-card.premium::before {
-            background: var(--primary-red);
+        .service-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--logo-red);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
         }
 
         .service-icon {
-            width: 4rem;
-            height: 4rem;
+            width: 80px;
+            height: 80px;
+            background: var(--logo-blue);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1.5rem;
-            background: linear-gradient(135deg, var(--primary-teal), var(--accent-blue));
-        }
-
-        .service-card.premium .service-icon {
-            background: linear-gradient(135deg, var(--primary-red), var(--accent-orange));
+            margin: 0 auto 1rem;
         }
 
         .service-icon i {
@@ -521,289 +443,138 @@
             color: white;
         }
 
-        .service-badge {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            padding: 0.5rem 1rem;
-            border-radius: 1rem;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .service-badge.premium {
-            background: linear-gradient(135deg, var(--primary-red), var(--accent-orange));
-            color: white;
-        }
-
-        .service-badge.value {
-            background: linear-gradient(135deg, var(--primary-teal), var(--accent-blue));
-            color: white;
-        }
-
-        .service-badge.popular {
-            background: #f3f4f6;
-            color: #374151;
-        }
-
         .service-title {
-            font-family: var(--font-display);
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-navy);
+            color: var(--navy-dark);
             margin-bottom: 1rem;
         }
 
         .service-description {
-            color: #6b7280;
+            color: var(--gray-medium);
             line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-
-        .service-features {
-            list-style: none;
-            text-align: left;
-        }
-
-        .service-features li {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0.5rem;
-            color: #374151;
-            font-size: 0.875rem;
-        }
-
-        .service-features i {
-            color: var(--primary-teal);
-            font-size: 0.75rem;
         }
 
         /* CTA Section */
-        .cta-section {
-            background: var(--hero-gradient);
-            padding: 6rem 0;
+        .cta {
+            background: var(--navy-dark);
+            color: white;
+            padding: 4rem 0;
             text-align: center;
-            position: relative;
         }
 
         .cta-container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 0 2rem;
-            position: relative;
-            z-index: 2;
+            padding: 0 1rem;
         }
 
-        .cta-title {
-            font-family: var(--font-display);
-            font-size: 3rem;
-            font-weight: 700;
-            color: white;
-            margin-bottom: 1.5rem;
+        .cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
         }
 
-        .cta-subtitle {
+        .cta p {
             font-size: 1.25rem;
-            color: #cbd5e1;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
         }
 
         .cta-buttons {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 1rem;
             flex-wrap: wrap;
         }
 
         .cta-phone {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            color: white;
+            gap: 0.5rem;
             font-size: 1.5rem;
             font-weight: 700;
-            text-decoration: none;
+            color: var(--logo-blue);
         }
 
-        .cta-phone i {
-            color: var(--primary-teal);
+        .cta-button {
+            background: #dc2626;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
         }
 
         /* Footer */
         .footer {
-            background: var(--primary-navy);
+            background: #0f172a;
             color: #94a3b8;
-            padding: 3rem 0 2rem;
+            padding: 2rem 0;
             text-align: center;
         }
 
         .footer-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1rem;
         }
 
-        .footer-logo {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #94a3b8 0%, #dc2626 50%, #0d9488 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-        }
-
-        .footer-text {
-            margin-bottom: 2rem;
-        }
-
-        .footer-info {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            font-size: 0.875rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .hero-container {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-                text-align: center;
-            }
-            
-            .hero-title {
-                font-size: 3rem;
-            }
-            
-            .services-title {
-                font-size: 2.5rem;
-            }
-            
-            .cta-title {
-                font-size: 2.5rem;
-            }
-        }
-
+        /* Logo Responsive Sizing */
         @media (max-width: 768px) {
-            .header {
-                padding: 0.75rem 0;
+            .logo-image {
+                height: 50px;
+                width: 50px;
             }
-            
+        }
+
+        @media (max-width: 480px) {
+            .logo-image {
+                height: 45px;
+                width: 45px;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
             .header-container {
-                padding: 0 1rem;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                gap: 0.5rem;
-            }
-            
-            .logo-brand {
                 flex-direction: column;
-                gap: 0.5rem;
-                align-items: flex-start;
+                gap: 1rem;
             }
-            
-            .logo-text {
-                font-size: 1.25rem;
-            }
-            
-            .header-badge {
-                font-size: 0.75rem;
-                padding: 0.25rem 0.75rem;
-            }
-            
+
             .header-contact {
                 flex-direction: column;
-                gap: 0.5rem;
-                align-items: flex-end;
+                gap: 1rem;
             }
-            
-            .phone-link {
-                font-size: 1rem;
-            }
-            
-            .cta-button {
-                padding: 0.625rem 1.25rem;
-                font-size: 0.875rem;
-            }
-            
-            .hero {
-                min-height: auto;
-                padding: 6rem 0 3rem;
-            }
-            
+
             .hero-container {
                 grid-template-columns: 1fr;
                 gap: 2rem;
-                text-align: center;
             }
-            
-            .hero-title {
+
+            .hero-content h1 {
                 font-size: 2rem;
-                line-height: 1.2;
-                margin-bottom: 1rem;
             }
-            
-            .hero-subtitle {
-                font-size: 1rem;
-                margin-bottom: 1.5rem;
-            }
-            
-            .hero-features {
-                grid-template-columns: 1fr;
-                gap: 0.75rem;
-                margin-bottom: 1.5rem;
-            }
-            
-            .hero-stats {
-                gap: 1.5rem;
-                margin-bottom: 1.5rem;
-            }
-            
-            .stat-number {
-                font-size: 1.5rem;
-            }
-            
-            .form-card {
-                margin: 0 1rem;
-                border-radius: 1.5rem;
-            }
-            
-            .form-header {
-                padding: 2rem 1.5rem 1.5rem;
-            }
-            
-            .form-title {
-                font-size: 1.5rem;
-            }
-            
-            .form-body {
-                padding: 1.5rem;
-            }
-            
+
             .form-row {
                 grid-template-columns: 1fr;
             }
-            
+
             .property-buttons {
                 grid-template-columns: 1fr;
-                gap: 0.5rem;
             }
-            
-            .property-btn {
-                padding: 1rem;
+
+            .stats {
+                justify-content: center;
             }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            
+
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
@@ -811,168 +582,32 @@
         }
 
         @media (max-width: 480px) {
-            .header-container {
-                padding: 0 0.75rem;
-            }
-            
-            .logo-text {
-                font-size: 1.125rem;
-            }
-            
-            .header-badge {
-                font-size: 0.6875rem;
-                padding: 0.25rem 0.5rem;
-            }
-            
-            .phone-link {
-                font-size: 0.875rem;
-            }
-            
-            .cta-button {
-                padding: 0.5rem 1rem;
-                font-size: 0.8125rem;
-            }
-            
-            .hero {
-                padding: 5rem 0 2rem;
-            }
-            
-            .hero-container,
-            .services-container,
-            .cta-container,
-            .footer-container {
-                padding: 0 0.75rem;
-            }
-            
-            .hero-title {
+            .hero-content h1 {
                 font-size: 1.75rem;
-                line-height: 1.15;
             }
-            
-            .hero-subtitle {
-                font-size: 0.9375rem;
-            }
-            
-            .hero-stats {
-                gap: 1rem;
-            }
-            
-            .stat-number {
-                font-size: 1.25rem;
-            }
-            
-            .stat-label {
-                font-size: 0.8125rem;
-            }
-            
-            .services-title {
-                font-size: 1.875rem;
-            }
-            
-            .cta-title {
-                font-size: 1.875rem;
-            }
-            
-            .form-card {
-                margin: 0 0.75rem;
-                border-radius: 1.25rem;
-            }
-            
-            .form-header {
-                padding: 1.75rem 1.25rem 1.25rem;
-            }
-            
-            .form-title {
-                font-size: 1.375rem;
-            }
-            
-            .form-subtitle {
-                font-size: 0.8125rem;
-            }
-            
-            .form-body {
-                padding: 1.25rem;
-            }
-            
-            .form-input,
-            .form-select {
-                padding: 0.875rem;
-                font-size: 0.9375rem;
-            }
-            
-            .property-btn {
-                padding: 0.875rem 0.5rem;
-            }
-            
-            .property-btn i {
-                font-size: 1.25rem;
-            }
-            
-            .property-btn span {
-                font-size: 0.8125rem;
-            }
-            
-            .submit-button {
-                padding: 1.125rem;
-                font-size: 1rem;
-            }
-        }
 
-        /* Success Message */
-        .success-message {
-            background: linear-gradient(135deg, #10b981, #059669);
-            color: white;
-            padding: 1rem;
-            border-radius: 1rem;
-            text-align: center;
-            margin-bottom: 1rem;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .success-message i {
-            margin-right: 0.5rem;
-        }
-
-        /* Loading Animation */
-        .submit-button.loading {
-            position: relative;
-            color: transparent;
-        }
-
-        .submit-button.loading::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 20px;
-            height: 20px;
-            border: 2px solid transparent;
-            border-top: 2px solid white;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: translate(-50%, -50%) rotate(0deg); }
-            100% { transform: translate(-50%, -50%) rotate(360deg); }
+            .gallery h2,
+            .services h2,
+            .cta h2 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Header -->
-    <header class="header" id="header">
+    <header class="header">
         <div class="header-container">
-            <div class="logo-brand">
-                <div class="logo-text">SQUEAKY KLEEN</div>
+            <div class="logo-section">
+                <img src="http://localhost:8080/squeaky-kleen-logo.png" alt="Squeaky Kleen Pressure Washing Services" class="logo-image">
                 <div class="header-badge">Licensed & Insured</div>
             </div>
             <div class="header-contact">
-                <a href="tel:772-418-4081" class="phone-link">
+                <a href="tel:772-207-0528" class="phone-link">
                     <i class="fas fa-phone"></i>
-                    772-418-4081
+                    772-207-0528
                 </a>
-                <a href="tel:772-418-4081" class="cta-button">
+                <a href="tel:772-207-0528" class="call-button">
                     <i class="fas fa-phone"></i>
                     Call Now
                 </a>
@@ -984,115 +619,154 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-badge">🏆 Florida's Premier Pressure Washing Experts</div>
-                <h1 class="hero-title">Transform Your Property with Professional Pressure Washing</h1>
+                <h1>Transform Your Property with Professional Pressure Washing</h1>
                 <p class="hero-subtitle">
                     Specializing in high-value paver sealing, roof washing, and complete property restoration. 
                     Trusted by 500+ satisfied customers across Florida.
                 </p>
                 
-                <div class="hero-features">
-                    <div class="hero-feature">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
                         <span>Fully Licensed & Insured</span>
                     </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-clock"></i>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
                         <span>Same Day Service Available</span>
                     </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-award"></i>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
                         <span>Premium Equipment & Materials</span>
                     </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-handshake"></i>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
                         <span>100% Satisfaction Guarantee</span>
                     </div>
                 </div>
 
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Happy Customers</span>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Happy Customers</div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">5★</span>
-                        <span class="stat-label">Average Rating</span>
+                    <div class="stat">
+                        <div class="stat-number">5★</div>
+                        <div class="stat-label">Average Rating</div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">24hr</span>
-                        <span class="stat-label">Response Time</span>
+                    <div class="stat">
+                        <div class="stat-number">24hr</div>
+                        <div class="stat-label">Response Time</div>
                     </div>
                 </div>
             </div>
 
             <!-- Lead Capture Form -->
-            <div class="form-wrapper">
-                <div class="form-card">
-                    <div class="form-header">
-                        <h2 class="form-title">Get Your FREE Estimate</h2>
-                        <p class="form-subtitle">No obligation • Quick response • Professional service</p>
+            <div class="form-card">
+                <div class="form-header">
+                    <h2>Get Your FREE Estimate</h2>
+                    <p>No obligation • Quick response • Professional service</p>
+                </div>
+                <div class="form-body">
+                    <form id="leadForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(772) 207-0528" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Property Type:</label>
+                            <div class="property-buttons">
+                                <button type="button" class="property-btn" data-type="residential">
+                                    <i class="fas fa-home"></i>
+                                    <span>Residential</span>
+                                </button>
+                                <button type="button" class="property-btn" data-type="commercial">
+                                    <i class="fas fa-building"></i>
+                                    <span>Commercial</span>
+                                </button>
+                                <button type="button" class="property-btn" data-type="discuss">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Let's Discuss</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceInterest">Service Interest:</label>
+                            <select id="serviceInterest" name="serviceInterest" required>
+                                <option value="">Select a service...</option>
+                                <option value="paver-sealing">🏆 Paver Sealing (Most Valuable)</option>
+                                <option value="roof-washing">💎 Roof Washing (High Value)</option>
+                                <option value="driveway-cleaning">🚗 Driveway Cleaning</option>
+                                <option value="house-washing">🏠 House Washing</option>
+                                <option value="multiple-services">📦 Multiple Services</option>
+                                <option value="not-sure">🤔 Not Sure Yet</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-rocket"></i>
+                            Get My Free Estimate Now!
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="gallery-container">
+            <h2>See the Squeaky Kleen Difference</h2>
+            <p class="gallery-subtitle">Real transformations from our satisfied customers across Florida</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="http://localhost:8080/upload/unnamed.jpg" alt="House Exterior Cleaning Before/After" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <div class="form-body">
-                        <form class="form-grid" id="leadForm">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label class="form-label" for="firstName">First Name</label>
-                                    <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Enter your first name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="lastName">Last Name</label>
-                                    <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Enter your last name" required>
-                                </div>
-                            </div>
+                    <div class="gallery-content">
+                        <div class="gallery-badge">🏠 House Cleaning</div>
+                        <h3 class="gallery-title">Exterior House Transformation</h3>
+                        <p class="gallery-description">Professional house washing that removes dirt, mold, and restores your home's beauty.</p>
+                    </div>
+                </div>
 
-                            <div class="form-group">
-                                <label class="form-label" for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="(772) 418-4081" required>
-                            </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="http://localhost:8080/upload/unnamed.jpg" alt="Paver Sealing Before/After" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="gallery-content">
+                        <div class="gallery-badge">🏆 Paver Sealing</div>
+                        <h3 class="gallery-title">Premium Walkway Transformation</h3>
+                        <p class="gallery-description">Professional paver sealing that protects and enhances your property investment.</p>
+                    </div>
+                </div>
 
-                            <div class="form-group">
-                                <label class="form-label" for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Property Type:</label>
-                                <div class="property-buttons">
-                                    <button type="button" class="property-btn" data-service="residential">
-                                        <i class="fas fa-home"></i>
-                                        <span>Residential</span>
-                                    </button>
-                                    <button type="button" class="property-btn" data-service="commercial">
-                                        <i class="fas fa-building"></i>
-                                        <span>Commercial</span>
-                                    </button>
-                                    <button type="button" class="property-btn" data-service="discuss">
-                                        <i class="fas fa-comments"></i>
-                                        <span>Let's Discuss</span>
-                                    </button>
-                                </div>
-                                <input type="hidden" id="propertyType" name="propertyType">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="serviceInterest">Service Interest:</label>
-                                <select id="serviceInterest" name="serviceInterest" class="form-select" required>
-                                    <option value="">Select a service...</option>
-                                    <option value="paver-sealing">🏆 Paver Sealing (Most Valuable)</option>
-                                    <option value="roof-washing">💎 Roof Washing (High Value)</option>
-                                    <option value="driveway-cleaning">🚗 Driveway Cleaning</option>
-                                    <option value="house-washing">🏠 House Washing</option>
-                                    <option value="multiple-services">📦 Multiple Services</option>
-                                    <option value="not-sure">🤔 Not Sure Yet</option>
-                                </select>
-                            </div>
-
-                            <button type="submit" class="submit-button">
-                                <i class="fas fa-rocket"></i>
-                                Get My Free Estimate Now!
-                            </button>
-                        </form>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="http://localhost:8080/upload/unnamed.jpg" alt="Dramatic Cleaning Results" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="gallery-content">
+                        <div class="gallery-badge">⚡ Dramatic Results</div>
+                        <h3 class="gallery-title">Side-by-Side Proof</h3>
+                        <p class="gallery-description">See the incredible transformation possible with professional pressure washing services.</p>
                     </div>
                 </div>
             </div>
@@ -1102,104 +776,58 @@
     <!-- Services Section -->
     <section class="services">
         <div class="services-container">
-            <div class="services-header">
-                <h2 class="services-title">Our Premium Services</h2>
-                <p class="services-subtitle">
-                    We specialize in high-value services that protect and enhance your property investment
-                </p>
-            </div>
-
+            <h2>Our Premium Services</h2>
+            
             <div class="services-grid">
-                <!-- Paver Sealing -->
-                <div class="service-card premium">
-                    <div class="service-badge premium">Most Valuable</div>
+                <div class="service-card featured">
+                    <div class="service-badge">Most Valuable</div>
                     <div class="service-icon">
                         <i class="fas fa-gem"></i>
                     </div>
                     <h3 class="service-title">Paver Sealing</h3>
-                    <p class="service-description">
-                        Protect and enhance your pavers with professional sealing that extends life and beauty.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Premium sealing materials</li>
-                        <li><i class="fas fa-check"></i> Complete surface preparation</li>
-                        <li><i class="fas fa-check"></i> Weather-resistant protection</li>
-                        <li><i class="fas fa-check"></i> Enhanced color restoration</li>
-                    </ul>
+                    <p class="service-description">Protect and enhance your pavers with professional sealing. Includes materials and expert application for long-lasting results.</p>
                 </div>
 
-                <!-- Roof Washing -->
-                <div class="service-card premium">
-                    <div class="service-badge value">High Value</div>
+                <div class="service-card">
+                    <div class="service-badge">High Value</div>
                     <div class="service-icon">
                         <i class="fas fa-home"></i>
                     </div>
                     <h3 class="service-title">Roof Washing</h3>
-                    <p class="service-description">
-                        Safe, low-pressure cleaning that removes algae, mold, and extends your roof's lifespan.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Soft wash technique</li>
-                        <li><i class="fas fa-check"></i> Algae & mold removal</li>
-                        <li><i class="fas fa-check"></i> Gutter cleaning included</li>
-                        <li><i class="fas fa-check"></i> Preventive treatment</li>
-                    </ul>
+                    <p class="service-description">Safe, low-pressure roof cleaning that removes algae, mold, and extends your roof's lifespan significantly.</p>
                 </div>
 
-                <!-- Driveway Cleaning -->
                 <div class="service-card">
-                    <div class="service-badge popular">Popular</div>
                     <div class="service-icon">
                         <i class="fas fa-road"></i>
                     </div>
                     <h3 class="service-title">Driveway Cleaning</h3>
-                    <p class="service-description">
-                        Remove oil stains, dirt, and grime with our powerful cleaning process.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Deep stain removal</li>
-                        <li><i class="fas fa-check"></i> Surface restoration</li>
-                        <li><i class="fas fa-check"></i> Crack cleaning</li>
-                        <li><i class="fas fa-check"></i> Quick turnaround</li>
-                    </ul>
+                    <p class="service-description">Remove oil stains, dirt, and grime from concrete and paver driveways. Perfect entry-level service with amazing results.</p>
                 </div>
 
-                <!-- House Washing -->
                 <div class="service-card">
-                    <div class="service-badge popular">Annual Service</div>
                     <div class="service-icon">
                         <i class="fas fa-building"></i>
                     </div>
                     <h3 class="service-title">House Washing</h3>
-                    <p class="service-description">
-                        Complete exterior cleaning for maximum curb appeal and property value.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Gentle, effective cleaning</li>
-                        <li><i class="fas fa-check"></i> Mold & mildew removal</li>
-                        <li><i class="fas fa-check"></i> Window & trim cleaning</li>
-                        <li><i class="fas fa-check"></i> Annual maintenance plans</li>
-                    </ul>
+                    <p class="service-description">Complete exterior house cleaning perfect for annual maintenance and improving your property's curb appeal.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta">
         <div class="cta-container">
-            <h2 class="cta-title">Ready to Transform Your Property?</h2>
-            <p class="cta-subtitle">
-                Join hundreds of satisfied customers who trust Squeaky Kleen for their pressure washing needs.
-            </p>
+            <h2>Ready to Transform Your Property?</h2>
+            <p>Join hundreds of satisfied customers who trust Squeaky Kleen for their pressure washing needs.</p>
             <div class="cta-buttons">
-                <a href="tel:772-418-4081" class="cta-phone">
+                <div class="cta-phone">
                     <i class="fas fa-phone"></i>
-                    772-418-4081
-                </a>
-                <a href="tel:772-418-4081" class="cta-button">
-                    <i class="fas fa-calendar"></i>
-                    Schedule Free Estimate
+                    772-207-0528
+                </div>
+                <a href="tel:772-207-0528" class="cta-button">
+                    Call for Free Estimate
                 </a>
             </div>
         </div>
@@ -1208,186 +836,47 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-logo">SQUEAKY KLEEN</div>
-            <p class="footer-text">Professional Pressure Washing Services</p>
-            <div class="footer-info">
-                <span>Licensed & Insured</span>
-                <span>•</span>
-                <span>Free Estimates</span>
-                <span>•</span>
-                <span>Local Experts</span>
-                <span>•</span>
-                <span>Satisfaction Guaranteed</span>
-            </div>
+            <p>&copy; 2024 Squeaky Kleen Pressure Washing Services. All rights reserved.</p>
+            <p>Licensed & Insured • Serving Florida • Call 772-207-0528</p>
         </div>
     </footer>
 
     <script>
-        // Enhanced JavaScript for Alternative Design
-        document.addEventListener('DOMContentLoaded', function() {
-            // Header scroll effect
-            const header = document.getElementById('header');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 100) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
+        // Property type selection
+        document.querySelectorAll('.property-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.property-btn').forEach(b => b.classList.remove('selected'));
+                this.classList.add('selected');
             });
+        });
 
-            // Property type selection
-            const propertyButtons = document.querySelectorAll('.property-btn');
-            const propertyTypeInput = document.getElementById('propertyType');
+        // Form submission
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
             
-            propertyButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remove selected class from all buttons
-                    propertyButtons.forEach(btn => btn.classList.remove('selected'));
-                    
-                    // Add selected class to clicked button
-                    this.classList.add('selected');
-                    
-                    // Update hidden input value
-                    const serviceValue = this.getAttribute('data-service');
-                    propertyTypeInput.value = serviceValue;
-                    
-                    // Add animation effect
-                    this.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        this.style.transform = '';
-                    }, 150);
-                });
-            });
-
-            // Form submission
-            const form = document.getElementById('leadForm');
-            const submitButton = form.querySelector('.submit-button');
+            const formData = new FormData(this);
+            const selectedProperty = document.querySelector('.property-btn.selected');
             
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Validation
-                const requiredFields = form.querySelectorAll('input[required], select[required]');
-                let isValid = true;
-                
-                requiredFields.forEach(field => {
-                    if (!field.value.trim()) {
-                        field.style.borderColor = '#dc2626';
-                        field.style.boxShadow = '0 0 0 3px rgba(220, 38, 38, 0.1)';
-                        isValid = false;
-                    } else {
-                        field.style.borderColor = '#0d9488';
-                        field.style.boxShadow = '0 0 0 3px rgba(13, 148, 136, 0.1)';
-                    }
-                });
-                
-                if (!propertyTypeInput.value) {
-                    alert('Please select a property type');
-                    isValid = false;
-                }
-                
-                if (isValid) {
-                    // Show loading state
-                    submitButton.classList.add('loading');
-                    submitButton.disabled = true;
-                    
-                    // Collect form data
-                    const formData = {
-                        firstName: document.getElementById('firstName').value,
-                        lastName: document.getElementById('lastName').value,
-                        phone: document.getElementById('phone').value,
-                        email: document.getElementById('email').value,
-                        propertyType: propertyTypeInput.value,
-                        serviceInterest: document.getElementById('serviceInterest').value,
-                        timestamp: new Date().toISOString()
-                    };
-                    
-                    console.log('Lead captured:', formData);
-                    
-                    // Simulate processing
-                    setTimeout(() => {
-                        // Hide loading state
-                        submitButton.classList.remove('loading');
-                        submitButton.disabled = false;
-                        
-                        // Show success message
-                        const successMessage = document.createElement('div');
-                        successMessage.className = 'success-message';
-                        successMessage.innerHTML = `
-                            <i class="fas fa-check-circle"></i>
-                            <strong>Success!</strong> We'll contact you within 24 hours for your free estimate.
-                        `;
-                        
-                        form.insertBefore(successMessage, form.firstChild);
-                        
-                        // Reset form after delay
-                        setTimeout(() => {
-                            form.reset();
-                            propertyButtons.forEach(btn => btn.classList.remove('selected'));
-                            propertyTypeInput.value = '';
-                            successMessage.remove();
-                            
-                            // Reset field styles
-                            requiredFields.forEach(field => {
-                                field.style.borderColor = '';
-                                field.style.boxShadow = '';
-                            });
-                        }, 4000);
-                    }, 2000);
-                }
-            });
-
-            // Phone number formatting
-            const phoneInput = document.getElementById('phone');
-            phoneInput.addEventListener('input', function(e) {
-                let value = e.target.value.replace(/\D/g, '');
-                
-                if (value.length >= 6) {
-                    value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 10)}`;
-                } else if (value.length >= 3) {
-                    value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
-                }
-                
-                e.target.value = value;
-            });
-
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-
-            // Add entrance animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+            if (selectedProperty) {
+                formData.append('propertyType', selectedProperty.dataset.type);
+            }
             
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
+            // Show success message
+            alert('Thank you! We\'ll contact you within 24 hours with your free estimate.');
             
-            // Observe service cards for animation
-            document.querySelectorAll('.service-card').forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
-                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(card);
-            });
+            // Log form data for integration
+            console.log('Lead Form Submission:', Object.fromEntries(formData));
+        });
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length >= 6) {
+                value = `(${value.slice(0,3)}) ${value.slice(3,6)}-${value.slice(6,10)}`;
+            } else if (value.length >= 3) {
+                value = `(${value.slice(0,3)}) ${value.slice(3)}`;
+            }
+            e.target.value = value;
         });
     </script>
 </body>
