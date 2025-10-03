@@ -414,6 +414,25 @@
             gap: 2rem;
         }
 
+        @media (min-width: 1200px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .service-card {
             background: white;
             border: 2px solid #f1f5f9;
@@ -828,6 +847,24 @@
                     </div>
                     <h3 class="service-title">Roof Washing</h3>
                     <p class="service-description">Safe, low-pressure roof cleaning that removes algae, mold, and extends your roof's lifespan significantly.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-badge">Premium</div>
+                    <div class="service-icon">
+                        <i class="fas fa-border-style"></i>
+                    </div>
+                    <h3 class="service-title">Fence Washing</h3>
+                    <p class="service-description">Professional fence cleaning for vinyl, wood, and composite materials. Restore your property's curb appeal and value.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-badge">Premium</div>
+                    <div class="service-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3 class="service-title">Screen Enclosure Cleaning</h3>
+                    <p class="service-description">Specialized cleaning for pool cages and screen enclosures. Remove algae, dirt, and restore crystal-clear views.</p>
                 </div>
 
                 <div class="service-card">
