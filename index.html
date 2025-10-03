@@ -7,6 +7,41 @@
     <meta name="description" content="Professional pressure washing services for residential and commercial properties. Specializing in paver sealing, roof washing, driveway cleaning, and house washing. Call 772-207-0528 for your free estimate today!">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
+    <!-- Google Analytics 4 - Replace GA_MEASUREMENT_ID with your actual ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- Facebook Pixel - Replace YOUR_PIXEL_ID with your actual pixel ID -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+    </script>
+
+    <!-- Hotjar Tracking Code - Replace YOUR_HJID with your actual Hotjar ID -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:YOUR_HJID,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    
     <style>
         /* Squeaky Kleen Brand Colors - Matching Logo */
         :root {
@@ -177,7 +212,7 @@
             opacity: 0.8;
         }
 
-        /* Form Card */
+        /* Form Card - Original Design */
         .form-card {
             background: white;
             border-radius: 16px;
@@ -287,6 +322,161 @@
             transform: translateY(-2px);
         }
 
+        /* Social Proof Notification - Exact match from screenshot */
+        .social-proof-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            z-index: 1000;
+            max-width: 280px;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .social-proof-popup.show {
+            transform: translateX(0);
+        }
+
+        .notification-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .customer-name {
+            font-weight: 600;
+            color: #1e293b;
+            font-size: 14px;
+        }
+
+        .action {
+            color: #64748b;
+            font-size: 13px;
+            line-height: 1.3;
+        }
+
+        .time {
+            color: #0ea5e9;
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        /* Exit Intent Modal - Exact match from screenshot */
+        .exit-intent-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .exit-intent-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 0;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .exit-intent-close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #64748b;
+            z-index: 10001;
+            background: none;
+            border: none;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .exit-intent-close:hover {
+            color: #1e293b;
+        }
+
+        .exit-intent-header {
+            background: white;
+            padding: 40px 40px 20px 40px;
+            text-align: center;
+        }
+
+        .exit-intent-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+
+        .exit-intent-header p {
+            font-size: 16px;
+            color: #64748b;
+            line-height: 1.4;
+        }
+
+        .exit-intent-header .highlight {
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .exit-intent-form {
+            padding: 20px 40px 40px 40px;
+        }
+
+        .exit-intent-form input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .exit-intent-form input:focus {
+            outline: none;
+            border-color: #0ea5e9;
+        }
+
+        .exit-intent-form input::placeholder {
+            color: #94a3b8;
+        }
+
+        .exit-intent-form button {
+            width: 100%;
+            background: #dc2626;
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .exit-intent-form button:hover {
+            background: #b91c1c;
+        }
+
         /* Gallery Section */
         .gallery {
             padding: 4rem 0;
@@ -318,25 +508,6 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-        }
-
-        @media (min-width: 1200px) {
-            .gallery-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
         }
 
         .gallery-item {
@@ -414,25 +585,6 @@
             gap: 2rem;
         }
 
-        @media (min-width: 1200px) {
-            .services-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
         .service-card {
             background: white;
             border: 2px solid #f1f5f9;
@@ -498,7 +650,6 @@
             background: var(--navy-dark);
             color: white;
             padding: 4rem 0;
-            text-align: center;
         }
 
         .cta-container {
@@ -565,21 +716,6 @@
             padding: 0 1rem;
         }
 
-        /* Logo Responsive Sizing */
-        @media (max-width: 768px) {
-            .logo-image {
-                height: 50px;
-                width: 50px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .logo-image {
-                height: 45px;
-                width: 45px;
-            }
-        }
-
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .header-container {
@@ -617,17 +753,28 @@
                 flex-direction: column;
                 align-items: center;
             }
-        }
 
-        @media (max-width: 480px) {
-            .hero-content h1 {
-                font-size: 1.75rem;
+            .social-proof-popup {
+                left: 10px;
+                right: 10px;
+                max-width: none;
             }
 
-            .gallery h2,
-            .services h2,
-            .cta h2 {
-                font-size: 2rem;
+            .exit-intent-content {
+                margin: 5% auto;
+                width: 95%;
+            }
+
+            .exit-intent-header {
+                padding: 30px 30px 15px 30px;
+            }
+
+            .exit-intent-header h2 {
+                font-size: 24px;
+            }
+
+            .exit-intent-form {
+                padding: 15px 30px 30px 30px;
             }
         }
     </style>
@@ -637,7 +784,7 @@
     <header class="header">
         <div class="header-container">
             <div class="logo-section">
-                <img src="Squeaky_Kleen_Logo.png" alt="Squeaky Kleen Pressure Washing Services" class="logo-image">
+                <img src="images/Squeaky_Kleen_Logo.png" alt="Squeaky Kleen Pressure Washing Services" class="logo-image">
                 <div class="header-badge">Licensed & Insured</div>
             </div>
             <div class="header-contact">
@@ -698,14 +845,14 @@
                 </div>
             </div>
 
-            <!-- Lead Capture Form -->
+            <!-- Original Lead Capture Form -->
             <div class="form-card">
                 <div class="form-header">
                     <h2>Get Your FREE Estimate</h2>
                     <p>No obligation • Quick response • Professional service</p>
                 </div>
                 <div class="form-body">
-                    <form id="leadForm">
+                    <form id="leadForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName">First Name</label>
@@ -780,7 +927,7 @@
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="Squeaky-Kleen-exterior-before-after.png" alt="House Exterior Cleaning Before/After" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/Squeaky-Kleen-exterior-before-after.png" alt="House Exterior Cleaning Before/After" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="gallery-content">
                         <div class="gallery-badge">🏠 House Cleaning</div>
@@ -791,7 +938,7 @@
 
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="Squeaky-Kleen-walkway-before-after.png" alt="Paver Sealing Before/After" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/Squeaky-Kleen-walkway-before-after.png" alt="Paver Sealing Before/After" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="gallery-content">
                         <div class="gallery-badge">🏆 Paver Sealing</div>
@@ -802,7 +949,7 @@
 
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="Squeaky-Kleen-PVC Fenece-Before-After.png" alt="PVC Fence Cleaning Before/After" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/Squeaky-Kleen-PVC Fenece-Before-After.png" alt="PVC Fence Cleaning Before/After" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="gallery-content">
                         <div class="gallery-badge">🏡 Fence Cleaning</div>
@@ -813,7 +960,7 @@
 
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="Squeaky-Kleen-roof-before-after.png" alt="Roof Cleaning Before/After" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/Squeaky-Kleen-roof-before-after.png" alt="Roof Cleaning Before/After" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="gallery-content">
                         <div class="gallery-badge">💎 Roof Washing</div>
@@ -896,9 +1043,7 @@
                     <i class="fas fa-phone"></i>
                     772-207-0528
                 </div>
-                <a href="tel:772-207-0528" class="cta-button">
-                    Call for Free Estimate
-                </a>
+                <a href="#" class="cta-button" onclick="scrollToForm()">Get Free Estimate</a>
             </div>
         </div>
     </section>
@@ -906,13 +1051,52 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <p>&copy; 2024 Squeaky Kleen Pressure Washing Services. All rights reserved.</p>
-            <p>Licensed & Insured • Serving Florida • Call 772-207-0528</p>
+            <p>&copy; 2025 Squeaky Kleen Pressure Washing Services. All rights reserved.</p>
+            <p>Licensed & Insured | Serving Florida | Call 772-207-0528</p>
         </div>
     </footer>
 
+    <!-- Social Proof Notification - Exact match from screenshot -->
+    <div id="socialProofNotification" class="social-proof-popup">
+        <div class="notification-content">
+            <span class="customer-name">Mike from Jensen Beach, FL</span>
+            <span class="action">just booked a roof washing service</span>
+            <span class="time">8 minutes ago</span>
+        </div>
+    </div>
+
+    <!-- Exit Intent Modal - Exact match from screenshot -->
+    <div id="exitIntentModal" class="exit-intent-modal">
+        <div class="exit-intent-content">
+            <button class="exit-intent-close">&times;</button>
+            <div class="exit-intent-header">
+                <h2>Wait! Don't Leave Empty-Handed!</h2>
+                <p>Get our <span class="highlight">FREE Pressure Washing Maintenance Guide</span> and save 15% on your first service!</p>
+            </div>
+            <form class="exit-intent-form" id="exitIntentForm">
+                <input type="email" placeholder="Enter your email address" required>
+                <input type="tel" placeholder="Phone number (optional)">
+                <button type="submit">Get My Free Guide + 15% Off!</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Tawk.to Live Chat Widget - Replace YOUR_PROPERTY_ID and YOUR_WIDGET_ID -->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/YOUR_WIDGET_ID';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+
+    <!-- JavaScript for Enhanced Functionality -->
     <script>
-        // Property type selection
+        // Property button selection
         document.querySelectorAll('.property-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 document.querySelectorAll('.property-btn').forEach(b => b.classList.remove('selected'));
@@ -920,34 +1104,183 @@
             });
         });
 
-        // Form submission
-        document.getElementById('leadForm').addEventListener('submit', function(e) {
-            e.preventDefault();
+        // Social Proof Notifications - Exact data from screenshot
+        const socialProofData = [
+            {name: "Mike from Jensen Beach, FL", action: "just booked a roof washing service", time: "8 minutes ago"},
+            {name: "Sarah from Palm City, FL", action: "just requested a paver sealing quote", time: "5 minutes ago"},
+            {name: "John from Stuart, FL", action: "just booked a driveway cleaning service", time: "2 minutes ago"},
+            {name: "Lisa from Port St. Lucie, FL", action: "just scheduled a house washing", time: "12 minutes ago"},
+            {name: "David from Hobe Sound, FL", action: "just booked a fence cleaning service", time: "15 minutes ago"}
+        ];
+
+        let currentProofIndex = 0;
+
+        function showSocialProof() {
+            const notification = document.getElementById('socialProofNotification');
+            const data = socialProofData[currentProofIndex];
             
-            const formData = new FormData(this);
-            const selectedProperty = document.querySelector('.property-btn.selected');
+            notification.querySelector('.customer-name').textContent = data.name;
+            notification.querySelector('.action').textContent = data.action;
+            notification.querySelector('.time').textContent = data.time;
             
-            if (selectedProperty) {
-                formData.append('propertyType', selectedProperty.dataset.type);
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 5000);
+            
+            currentProofIndex = (currentProofIndex + 1) % socialProofData.length;
+        }
+
+        // Show social proof every 15 seconds
+        setInterval(showSocialProof, 15000);
+        // Show first notification after 5 seconds
+        setTimeout(showSocialProof, 5000);
+
+        // Exit Intent Detection
+        let exitIntentShown = false;
+        
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0 && !exitIntentShown) {
+                showExitIntent();
             }
-            
-            // Show success message
-            alert('Thank you! We\'ll contact you within 24 hours with your free estimate.');
-            
-            // Log form data for integration
-            console.log('Lead Form Submission:', Object.fromEntries(formData));
         });
 
-        // Phone number formatting
-        document.getElementById('phone').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length >= 6) {
-                value = `(${value.slice(0,3)}) ${value.slice(3,6)}-${value.slice(6,10)}`;
-            } else if (value.length >= 3) {
-                value = `(${value.slice(0,3)}) ${value.slice(3)}`;
+        function showExitIntent() {
+            if (!exitIntentShown) {
+                document.getElementById('exitIntentModal').style.display = 'block';
+                exitIntentShown = true;
+                
+                // Track exit intent event
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'exit_intent_shown', {
+                        'event_category': 'engagement',
+                        'event_label': 'exit_intent_popup'
+                    });
+                }
             }
-            e.target.value = value;
+        }
+
+        // Close exit intent modal
+        document.querySelector('.exit-intent-close').addEventListener('click', function() {
+            document.getElementById('exitIntentModal').style.display = 'none';
         });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('exitIntentModal');
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Handle exit intent form submission
+        document.getElementById('exitIntentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = this.querySelector('input[type="email"]').value;
+            const phone = this.querySelector('input[type="tel"]').value;
+            
+            // Track conversion
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'lead_magnet_signup', {
+                    'event_category': 'conversion',
+                    'event_label': 'exit_intent_lead_magnet'
+                });
+            }
+            
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead');
+            }
+            
+            // Here you would typically send the data to your email marketing service
+            console.log('Exit intent lead captured:', {email, phone});
+            
+            // Show success message
+            this.innerHTML = '<p style="color: green; font-weight: bold; text-align: center; padding: 20px;">Thank you! Check your email for the guide and discount code.</p>';
+            
+            // Close modal after 3 seconds
+            setTimeout(() => {
+                document.getElementById('exitIntentModal').style.display = 'none';
+            }, 3000);
+        });
+
+        // Scroll to form function
+        function scrollToForm() {
+            document.querySelector('.form-card').scrollIntoView({
+                behavior: 'smooth'
+            });
+            
+            // Track CTA click
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'cta_click', {
+                    'event_category': 'engagement',
+                    'event_label': 'scroll_to_form'
+                });
+            }
+        }
+
+        // Track form interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track when users start filling out the form
+            const formInputs = document.querySelectorAll('#leadForm input, #leadForm select');
+            let formStarted = false;
+            
+            formInputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    if (!formStarted) {
+                        formStarted = true;
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'form_start', {
+                                'event_category': 'engagement',
+                                'event_label': 'main_contact_form'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Track form submission
+            const mainForm = document.getElementById('leadForm');
+            if (mainForm) {
+                mainForm.addEventListener('submit', function() {
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'form_submit', {
+                            'event_category': 'conversion',
+                            'event_label': 'main_contact_form'
+                        });
+                    }
+                    
+                    if (typeof fbq !== 'undefined') {
+                        fbq('track', 'Lead');
+                    }
+                });
+            }
+        });
+
+        // Scroll-based lead magnet (alternative trigger)
+        let scrollTriggered = false;
+        window.addEventListener('scroll', function() {
+            if (!scrollTriggered && !exitIntentShown) {
+                const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+                if (scrollPercent > 70) {
+                    scrollTriggered = true;
+                    // Delay showing the popup by 2 seconds after scroll trigger
+                    setTimeout(() => {
+                        if (!exitIntentShown) {
+                            showExitIntent();
+                        }
+                    }, 2000);
+                }
+            }
+        });
+
+        // Time-based lead magnet (backup trigger)
+        setTimeout(() => {
+            if (!exitIntentShown && !scrollTriggered) {
+                showExitIntent();
+            }
+        }, 45000); // Show after 45 seconds if no other triggers fired
     </script>
 </body>
 </html>
